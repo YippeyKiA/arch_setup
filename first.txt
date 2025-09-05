@@ -1,0 +1,5 @@
+sudo pacman -S git
+
+sudo pacman -S firefox
+
+sudo pacman -S yay

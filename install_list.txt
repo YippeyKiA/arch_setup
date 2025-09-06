@@ -1,0 +1,42 @@
+sudo pacman -Syu
+
+sudo pacman -S nano git vim neofetch
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+sudo nano /etc/pacman.conf
+addline ILoveCandy
+
+sudo pacman -Sy
+
+sudo pacman -S reflector
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
+sudo pacman -Sy
+
+sudo pacman -S jdk-openjdk
+
+sudo pacman -S amd-ucode or sudo pacman -S intel-ucode
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+sudo pacman -S flatpak
+
+sudo pacman -S firefox libreoffice-fresh vlc gimp thunderbird kdenlive krita 
+
+sudo pacman -S vscodium
+
+yay -S flutter
+
+yay -S android-sdk android-sdk-platform-tools android-sdk-build-tools
+yay -S android-platform
+
+archlinux-java status
+
+yay kitty
+
+yay hyprland
+
